@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>EC</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+</head>
+<body>
+	<form action="./index.html" method="GET" name="myform">
+		<!-- ヘッダー -->
+		<header>
+			<div class="header_inner">
+				<div class="header_left">
+					<h1><a href="./index.html">TEST.com</a></h1>
+				</div>
+				<div class="header_right">
+					<nav>
+						<ul>
+							<li class="parent_category" data-genre="2494">
+								<a href="./index.html?genre=2494">
+									<input type="radio" name="genre" value="2494" class="input_tag" hidden>レディース
+								</a>
+							</li>
+							<li class="parent_category" data-genre="2495">
+								<a href="./index.html?genre=2495">
+									<input type="radio" name="genre" value="2495" class="input_tag" hidden>メンズ
+								</a>
+							</li>
+							<li class="parent_category" data-genre="2496">
+								<a href="./index.html?genre=2496">
+									<input type="radio" name="genre" value="2496" class="input_tag" hidden>腕時計・アクセサリー
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- キーワード検索 -->
+					<div>
+						<input type="search" id="search" name="query" placeholder="キーワードを入力">
+					</div>
+				</div>
+			</div>
+		</header>
+	</form>
+	<!-- 商品情報 -->
+	<div class="middle_area">
+		<div class="container">
+			<div id="detail_area">
+				<div id="error_message" hidden>
+					<p class="notMatchProduct">読み込みに失敗しました。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./scripts/common.js"></script>
+	<script type="text/javascript" src="./scripts/detail.js"></script>
+</body>
+</html>
